@@ -1,7 +1,19 @@
 <%- include('partials/header.ejs') -%>
 
+  <!-- Main container -->
   <div class="container">
-    <button class="btn btn-primary" id="createNewSetButton" onclick="createNewSet()">Create New Set</button>
+    <div class="row">
+      <div class="col">
+        <!-- Set Container -->
+        <%- include('partials/setContainer.ejs') -%>
+      </div>
+      <div class="col text-center">
+        <!-- FlashCardDisplay -->
+        <%- include('partials/flashCardDisplay.ejs') -%>
+      </div>
+          <!-- Spacer for 3rd column... yeah its prob not best practice -->
+    
+    <div class="col"></div>  
   </div>
-  <%- include('partials/flashCardDisplay.ejs') -%>
-    <%- include('partials/footer.ejs') -%>
+
+  <%- include('partials/footer.ejs') -%>
