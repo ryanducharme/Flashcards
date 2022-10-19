@@ -4,9 +4,15 @@ const port = 3000
 
 app.use(express.static('public'))
 
-app.get('/', (req, res) => {
-  res.sendFile('index.html');
+app.set("view engine", "ejs");
+
+app.get('/123', (req, res) => {
+  res.render('index.ejs');
 })
+
+// app.get('/createNewSet', (req, res) => {
+//   res.sendFile(__dirname + '/public/newSet.html');
+// })
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
