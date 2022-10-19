@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ryanducharme/Flashcards/issues"
   },
-  "homepage": "https://github.com/ryanducharme/Flashcards#readme"
+  "homepage": "https://github.com/ryanducharme/Flashcards#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
